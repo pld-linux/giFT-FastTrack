@@ -11,6 +11,7 @@ URL:		http://developer.berlios.de/projects/gift-fasttrack/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	giFT-devel >= 0.10.0
+BuildRequires:	libmagic-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
