@@ -1,14 +1,18 @@
 Summary:	FastTrack plugin for giFT
 Summary(pl):	Wtyczka FastTrack dla giFT
 Name:		giFT-FastTrack
-Version:	0.8.2
+Version:	0.8.3
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://download.berlios.de/gift-fasttrack/%{name}-%{version}.tar.gz
-# Source0-md5:	515e090a190fc9c18faa114a61a2b6f7
+# Source0-md5:	2f355e357e8ef777acf7ff37be117fd4
 URL:		http://developer.berlios.de/projects/gift-fasttrack/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	giFT-devel >= 0.10.0
+BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,6 +31,12 @@ dzia³a.
 %setup -q
 
 %build
+rm -f missing
+%{__libtoolize}
+%{__aclocal} -I m4
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
@@ -45,4 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/giFT/*.so*
 %{_libdir}/giFT/*.la
 %{_datadir}/giFT/FastTrack
-%{_mandir}/man1/*
