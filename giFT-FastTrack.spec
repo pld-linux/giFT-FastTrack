@@ -1,16 +1,16 @@
 Summary:	FastTrack plugin for giFT
 Summary(pl):	Wtyczka FastTrack dla giFT
 Name:		giFT-FastTrack
-Version:	0.8.5
+Version:	0.8.6
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://download.berlios.de/gift-fasttrack/%{name}-%{version}.tar.gz
-# Source0-md5:	021669cbd185a45a7b2e71006e60b38a
+# Source0-md5:	21bb27bd1384339e096b7d90de5b1fc9
 URL:		http://developer.berlios.de/projects/gift-fasttrack/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	giFT-devel >= 0.10.0
+BuildRequires:	giFT-devel >= 0.11.6
 BuildRequires:	libmagic-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
