@@ -2,7 +2,7 @@ Summary:	FastTrack plugin for giFT
 Summary(pl):	Wtyczka FastTrack dla giFT
 Name:		giFT-FastTrack
 Version:	0.8.8
-Release:	1
+Release:	1.1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://download.berlios.de/gift-fasttrack/%{name}-%{version}.tar.gz
@@ -47,6 +47,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+	
+%ifarch amd64
+    install -d $RPM_BUILD_ROOT/%{_libdir}
+    mv $RPM_BUILD_ROOT/usr/lib/* $RPM_BUILD_ROOT/%{_libdir}
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
