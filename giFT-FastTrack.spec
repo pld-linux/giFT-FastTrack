@@ -1,5 +1,5 @@
 Summary:	FastTrack plugin for giFT
-Summary(pl):	Wtyczka FastTrack dla giFT
+Summary(pl.UTF-8):   Wtyczka FastTrack dla giFT
 Name:		giFT-FastTrack
 Version:	0.8.9
 Release:	1
@@ -19,11 +19,11 @@ enables users of giFT to participate in the FastTrack network. The
 required cryptographic algorithms have been successfully reverse
 engineered and searching/downloading already work.
 
-%description -l pl
-giFT-FastTrack jest wtyczk± dla giFT (http://giftproject.org)
-pozwalaj±c± u¿ytkownikom giFT udzielaæ siê w sieci FastTrack. Wymagane
-algorytmy kryptograficzne zosta³y z³amane i szukanie/¶ci±ganie ju¿
-dzia³a.
+%description -l pl.UTF-8
+giFT-FastTrack jest wtyczkÄ… dla giFT (http://giftproject.org)
+pozwalajÄ…cÄ… uÅ¼ytkownikom giFT udzielaÄ‡ siÄ™ w sieci FastTrack. Wymagane
+algorytmy kryptograficzne zostaÅ‚y zÅ‚amane i szukanie/Å›ciÄ…ganie juÅ¼
+dziaÅ‚a.
 
 %prep
 %setup -q
