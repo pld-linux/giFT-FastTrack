@@ -1,5 +1,5 @@
 Summary:	FastTrack plugin for giFT
-Summary(pl.UTF-8):   Wtyczka FastTrack dla giFT
+Summary(pl.UTF-8):	Wtyczka FastTrack dla giFT
 Name:		giFT-FastTrack
 Version:	0.8.9
 Release:	1
